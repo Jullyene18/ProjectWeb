@@ -1,0 +1,15 @@
+.section-barra-black{
+    background-color: #000;
+    padding: 1.3rem;
+}
+
+.menu{
+    padding: 2rem;
+}
+
+.item-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-decoration: none;
+}
