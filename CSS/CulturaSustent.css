@@ -1,0 +1,112 @@
+/* Fundo Parallax */
+.parallax {
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; 
+}
+#Cult{
+    background-image: url(/HTML/assets/seminario-cerena-cidades-e-comunidades-sustentaveis.jpg);
+}
+#Econ{
+    background-image: url(/HTML/assets/economia-background.jpg);
+}
+#Prat{
+    background-image: url(/HTML/assets/jovem-familia-feliz-se-divertindo-no-parque_23-2148222882.avif);
+}
+
+/* Formatação do contêiner Principal */
+.content-wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    min-height: 100vh; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.125rem; 
+    line-height: 1.5; 
+    font-weight: 900;
+}
+
+/* Conteúdo */
+.content {
+    max-width: 1500px; 
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 30px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    position: relative; 
+    z-index: 1;
+}
+
+/* Formatação pro título-tema */
+#titulo {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500; 
+    font-size: 1.5rem; 
+}
+
+/* Card */
+#card {
+    background-color: darkorange;
+    border-radius: 10px;
+    padding: 20px; 
+    width: 100%;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-left: -100px; 
+    
+}
+
+#card p {
+    font-weight: 900; 
+    line-height: 1.5; 
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Conteúdo Principal */
+#principalContent {
+    text-align: justify; 
+    margin: 40px 100px 0; 
+    font-weight: 900; 
+    line-height: 1.5; 
+}
+
+/* Contêiner do GRID*/
+.grid-container {
+    display: grid; 
+    grid-template-columns: 1fr 2px 1fr; 
+    gap: 20px; 
+}
+
+/* Estilos para as Colunas */
+.coluna {
+    padding: 20px; 
+}
+
+
+.linha-separadora {
+    background-color: #ccc; 
+    height: auto; 
+}
+
+/* Estilo para a Coluna Direita */
+.coluna.direita {
+    padding-left: 20px; /* Espaçamento interno da coluna direita */
+}
+/* Imagens */
+img {
+    display: block; 
+    margin: 0 auto; 
+    width: 70%; 
+}

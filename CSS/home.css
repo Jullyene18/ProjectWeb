@@ -34,8 +34,13 @@
     align-items: center;
     background: #938C50;
     height: 8vh;
+<<<<<<< HEAD
     padding: 1rem !important;
     position: fixed;
+=======
+    padding: 1rem;
+    
+>>>>>>> 033faa5e9b546f9fd08287c68d0d23fc5bbe1678
     top: 0;
     width: -moz-available;
     z-index: 2;
