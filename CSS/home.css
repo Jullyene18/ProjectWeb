@@ -377,3 +377,10 @@ p {
         color: #000;
     }
 }
+
+
+.submenu {
+    height: auto;
+    width: 399px;
+    background-color: red;
+}
