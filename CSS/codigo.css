@@ -1,10 +1,10 @@
 
 /* Estilo geral para o corpo da página */
 body {
-    background-image: url('fundo2.jpg'); /* Certifique-se de que o caminho da imagem está correto */
-    background-size: cover; /* Faz com que a imagem ocupe todo o espaço da tela */
-    background-position: center; /* Centraliza a imagem no meio da tela */
-    background-attachment: fixed; /* Mantém o fundo fixo enquanto o conteúdo rola */
+    background-image: url('fundo2.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
     position: relative;
     z-index: 1;
     margin: 0;
@@ -19,8 +19,8 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Opcional: sobreposição transparente para contraste */
-    z-index: 1; /* Mantém o fundo no nível correto */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 
 /* Container principal que envolve o conteúdo */
@@ -30,21 +30,22 @@ body::before {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 2; /* Garante que o conteúdo da página esteja acima do background */
+    z-index: 1; 
     padding: 2rem;
 }
 
 /* Container Azul */
 .container-laranja {
     display: flex;
-    background-color: rgba(4, 90, 116, 0.9); /* Azul com transparência */
+    background-color: rgba(4, 90, 116, 0.9); 
     padding: 20px;
     border-radius: 10px;
     color: rgb(255, 255, 255);
     position: relative;
     z-index: 2;
-    min-height: 100vh; /* Define altura mínima para cobrir toda a página */
-    width: 100%; /* Faz a div cobrir toda a largura da página */
+    min-height: 100vh; 
+    width: 100%;
+    margin-top: 7rem;
 }
 .container-laranja h2 {
     font-size: 2.5rem;
@@ -85,6 +86,7 @@ body::before {
     padding: 5rem 3.5rem;
     position: relative;
     z-index: 2;
+    width: 100vw;
 }
 
 /* Ajuste no rodapé em telas pequenas */
@@ -95,31 +97,31 @@ body::before {
     }
 }
 .menu-referencias {
-    cursor: pointer; /* Indica que é clicável */
-    text-align: right; /* Alinha o texto à direita */
-    color: #fff; /* Cor do texto */
+    cursor: pointer; 
+    text-align: right; 
+    color: #fff; 
 }
 
 /* Menu escondido por padrão */
 #menu-referencias-items {
-    display: none; /* Esconde o menu por padrão */
-    list-style: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding */
-    margin-top: 10px; /* Espaço acima da lista */
-    text-align: right; /* Alinha os itens do menu à direita */
+    display: none; 
+    list-style: none; 
+    padding: 0; 
+    margin-top: 10px; 
+    text-align: right; 
 }
 
 #menu-referencias-items li {
-    margin: 10px 0; /* Espaçamento entre os itens */
+    margin: 10px 0; 
 }
 
 #menu-referencias-items li a {
-    color: #fff; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    padding: 10px; /* Espaçamento interno */
-    display: block; /* Faz o link ocupar toda a largura */
+    color: #fff; 
+    text-decoration: none;
+    padding: 10px; 
+    display: block; 
 }
 
 #menu-referencias-items li a:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
+    text-decoration: underline; 
 }

@@ -79,6 +79,7 @@
     bottom: -3vh;
     background-color: #938C50;
     padding: 5rem 3.5rem;
+    width: 100vw;
 }
 
 .footer-redes-sociais::after{

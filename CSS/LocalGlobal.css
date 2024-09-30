@@ -1,7 +1,9 @@
-
+.texto-importancia-local-global {
+    margin-top: 10rem;
+}
 /* Estilo geral para o corpo da página */
 body {
-    background-image: url('cidade_sustentavel.jpg'); /* Define a imagem de fundo da página */
+    background-image: url('/HTML/assets/cidade_sustentavel.jpg'); /* Define a imagem de fundo da página */
     background-size: cover; /* Faz com que a imagem de fundo cubra toda a área disponível */
     background-position: center; /* Centraliza a imagem de fundo */
     background-attachment: fixed; /* Mantém a imagem de fundo fixa enquanto o conteúdo rola */
@@ -30,8 +32,9 @@ body::before {
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
     position: relative; /* Define a posição como relativa */
-    z-index: 2; /* Garante que o conteúdo esteja acima da sobreposição do corpo */
+    z-index: 1; /* Garante que o conteúdo esteja acima da sobreposição do corpo */
     padding: 2rem; /* Adiciona um preenchimento de 2 rem em todos os lados */
+    margin-top: 6rem;
 }
 .container-laranja li{
     font-size: 15px;
@@ -62,6 +65,8 @@ body::before {
 .texto {
     flex: 1; /* Permite que a div cresça para preencher o espaço disponível */
     padding-right: 20px; /* Adiciona um preenchimento à direita de 20 pixels */
+    font-weight: 400;
+    margin-top: 3rem;
 }
 
 /* Estilo para a seção de imagens dentro do container laranja */
@@ -74,9 +79,9 @@ body::before {
 
 /* Estilo para as imagens dentro da seção de imagens */
 .imagens img {
-    width: 100%; /* Define a largura da imagem como 100% do contêiner pai */
-    max-width: 450px; /* Define a largura máxima da imagem como 450 pixels */
-    border-radius: 30px; /* Adiciona bordas arredondadas com raio de 30 pixels */
+    width: 100%; 
+    max-width: 450px;
+    border-radius: 30px; 
 }
 
 /* Rodapé com redes sociais */
@@ -89,6 +94,7 @@ body::before {
     padding: 5rem 3.5rem; /* Adiciona um preenchimento de 5 rem na parte superior e inferior e 3.5 rem nas laterais */
     position: relative; /* Define a posição como relativa */
     z-index: 2; /* Define a camada z-index para manter acima de elementos anteriores */
+    width: 100vw;
 }
 
 /* Ajuste no rodapé em telas pequenas */
@@ -126,4 +132,8 @@ body::before {
 
 #menu-referencias-items li a:hover {
     text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.listaBrasil {
+    color: #fff;
 }
