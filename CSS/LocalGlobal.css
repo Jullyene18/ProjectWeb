@@ -1,0 +1,206 @@
+/* Estilo para os itens do menu de navegação */
+.itens-menu {
+    color: #eeeeee; /* Define a cor do texto dos itens do menu como um cinza muito claro */
+    text-decoration: none; /* Remove a decoração padrão dos links (sublinhado) */
+    transition: 0.3s; /* Adiciona uma transição suave de 0.3 segundos para quaisquer mudanças de propriedade */
+    font-weight: 400; /* Define o peso da fonte como normal */
+}
+
+/* Estilo para os itens do menu quando o mouse está sobre eles */
+.itens-menu:hover {
+    font-weight: 600; /* Aumenta o peso da fonte para semi-negrito quando o item é hoverado */
+    color: #fff; /* Muda a cor do texto para branco quando o item é hoverado */
+}
+
+/* Estilo para o logo no menu de navegação */
+.logo {
+    font-size: 1.5rem; /* Define o tamanho da fonte como 1.5 rem */
+    text-transform: uppercase; /* Transforma todo o texto para maiúsculas */
+    letter-spacing: 0.25rem; /* Adiciona espaçamento entre as letras */
+    color: #fff; /* Define a cor do texto do logo como branco */
+    text-decoration: none; /* Remove a decoração padrão do link (sublinhado) */
+}
+
+/* Estilo para a seção de navegação */
+.navegacao {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Define a família de fontes, priorizando fontes do sistema para melhor desempenho */
+    display: flex; /* Utiliza Flexbox para o layout */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    background: #000; /* Define o fundo da navegação como preto */
+    height: 8vh; /* Define a altura da navegação como 8% da altura da viewport */
+    padding: 1rem; /* Adiciona um preenchimento de 1 rem em todos os lados */
+}
+
+/* Estilo para a lista de navegação */
+.nav-list {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    display: flex; /* Utiliza Flexbox para os itens da lista */
+    justify-content: flex-end; /* Alinha os itens da lista à direita */
+    flex-wrap: wrap; /* Permite que os itens da lista quebrem para a próxima linha se necessário */
+}
+
+/* Estilo para cada item da lista de navegação */
+.nav-list li {
+    letter-spacing: 0.188rem; /* Adiciona espaçamento entre as letras */
+    margin-left: 2rem; /* Adiciona uma margem à esquerda de 2 rem entre os itens */
+}
+
+/* Estilo para o ícone de menu (hambúrguer) */
+.icone-menu {
+    display: none; /* Esconde o ícone de menu por padrão */
+}
+
+/* Media Query para telas com largura máxima de 768px (dispositivos móveis) */
+@media (max-width: 768px) {
+    .navegacao {
+        justify-content: space-between; /* Garante que os itens fiquem distribuídos corretamente */
+        padding: 0.5rem; /* Reduz o preenchimento para 0.5 rem */
+        height: auto; /* Permite que a altura se ajuste automaticamente */
+    }
+
+    .logo {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte do logo para 1.2 rem em telas menores */
+    }
+
+    .icone-menu {
+        display: block; /* Exibe o ícone de menu em telas menores */
+        font-size: 1.5rem; /* Define o tamanho da fonte do ícone de menu */
+        color: #fff; /* Define a cor do ícone de menu como branco */
+        cursor: pointer; /* Altera o cursor para indicar que o ícone é clicável */
+    }
+
+    .nav-list {
+        display: none; /* Esconde a lista de navegação em telas menores, provavelmente para ser exibida via JavaScript ao clicar no ícone */
+    }
+}
+
+/* Estilo geral para o corpo da página */
+body {
+    background-image: url('cidade_sustentavel.jpg'); /* Define a imagem de fundo da página */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área disponível */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa enquanto o conteúdo rola */
+    position: relative; /* Define a posição como relativa para permitir posicionamento absoluto de elementos internos */
+    z-index: 1; /* Define a camada z-index para garantir a ordem de sobreposição */
+    margin: 0; /* Remove as margens padrão do corpo */
+    padding: 0; /* Remove os preenchimentos padrão do corpo */
+}
+
+/* Ajuste para que a imagem de fundo fique abaixo do conteúdo */
+body::before {
+    content: ""; /* Gera um elemento vazio */
+    position: absolute; /* Posiciona o elemento absolutamente em relação ao corpo */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Define a largura como 100% da viewport */
+    height: 100%; /* Define a altura como 100% da viewport */
+    background: rgba(0, 0, 0, 0.5); /* Aplica uma sobreposição semitransparente preta para contraste */
+    z-index: 1; /* Define a camada z-index para manter atrás do conteúdo principal */
+}
+
+/* Container principal que envolve o conteúdo */
+.content {
+    flex: 1; /* Permite que o container cresça para preencher o espaço disponível */
+    display: flex; /* Utiliza Flexbox para o layout interno */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    position: relative; /* Define a posição como relativa */
+    z-index: 2; /* Garante que o conteúdo esteja acima da sobreposição do corpo */
+    padding: 2rem; /* Adiciona um preenchimento de 2 rem em todos os lados */
+}
+.container-laranja li{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Estilo para os títulos e textos dentro do card */
+.container-laranja h2 {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 0;
+}
+
+/* Container Laranja */
+.container-laranja {
+    display: flex; /* Utiliza Flexbox para o layout interno */
+    background-color: rgba(169, 116, 0, 0.9); /* Define o fundo laranja com 90% de opacidade */
+    padding: 20px; /* Adiciona um preenchimento interno de 20 pixels */
+    border-radius: 10px; /* Adiciona bordas arredondadas com raio de 10 pixels */
+    color: white; /* Define a cor do texto como branco */
+    position: relative; /* Define a posição como relativa */
+    z-index: 2; /* Define a camada z-index para manter acima da sobreposição do corpo */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+    width: 100%; /* Faz a div ocupar toda a largura disponível */
+}
+
+/* Estilo para a seção de texto dentro do container laranja */
+.texto {
+    flex: 1; /* Permite que a div cresça para preencher o espaço disponível */
+    padding-right: 20px; /* Adiciona um preenchimento à direita de 20 pixels */
+}
+
+/* Estilo para a seção de imagens dentro do container laranja */
+.imagens {
+    flex: 1; /* Permite que a div cresça para preencher o espaço disponível */
+    display: fixed; /* **Nota:** "fixed" não é um valor válido para a propriedade "display". Provavelmente, o usuário quis usar "position: fixed;" */
+    flex-direction: column; /* Define a direção dos itens flex como coluna */
+    justify-content: space-between; /* Distribui as imagens com espaço entre elas */
+}
+
+/* Estilo para as imagens dentro da seção de imagens */
+.imagens img {
+    width: 100%; /* Define a largura da imagem como 100% do contêiner pai */
+    max-width: 450px; /* Define a largura máxima da imagem como 450 pixels */
+    border-radius: 30px; /* Adiciona bordas arredondadas com raio de 30 pixels */
+}
+
+/* Rodapé com redes sociais */
+.footer-redes-sociais {
+    display: flex; /* Utiliza Flexbox para o layout interno */
+    gap: 1rem; /* Adiciona um espaço de 1 rem entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    background-color: #938C50; /* Define a cor de fundo do rodapé */
+    padding: 5rem 3.5rem; /* Adiciona um preenchimento de 5 rem na parte superior e inferior e 3.5 rem nas laterais */
+    position: relative; /* Define a posição como relativa */
+    z-index: 2; /* Define a camada z-index para manter acima de elementos anteriores */
+}
+
+/* Ajuste no rodapé em telas pequenas */
+@media (max-width: 768px) {
+    .footer-redes-sociais {
+        font-size: 0.875rem; /* Reduz o tamanho da fonte para 0.875 rem em telas menores */
+        padding: 5rem 2.5rem; /* Ajusta o preenchimento para 5 rem nas partes superior e inferior e 2.5 rem nas laterais */
+    }
+}
+.menu-referencias {
+    cursor: pointer; /* Indica que é clicável */
+    text-align: right; /* Alinha o texto à direita */
+    color: #fff; /* Cor do texto */
+}
+
+/* Menu escondido por padrão */
+#menu-referencias-items {
+    display: none; /* Esconde o menu por padrão */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+    margin-top: 10px; /* Espaço acima da lista */
+    text-align: right; /* Alinha os itens do menu à direita */
+}
+
+#menu-referencias-items li {
+    margin: 10px 0; /* Espaçamento entre os itens */
+}
+
+#menu-referencias-items li a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px; /* Espaçamento interno */
+    display: block; /* Faz o link ocupar toda a largura */
+}
+
+#menu-referencias-items li a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
