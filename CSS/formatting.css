@@ -120,6 +120,14 @@ img {
     display: block;
 }
 
+.container-fundo {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: cyan;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 20px;
+}
 
 .container {
     max-width: 100%;
